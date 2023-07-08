@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4b6524c5de.js" crossorigin="anonymous"></script>
+    <script src="./assets/eje9.js"></script>
 
 </head>
 
@@ -42,7 +43,25 @@
     </ul>
     </header>
   <main>
-
+    <div class="container">
+      <form>
+        <div class="alert alert-primary text-center" role="alert">
+          <strong>Numeros enteros</strong>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputName" class="col-4 col-form-label">Ingrese numeros enteros positivos o negativos</label>
+          <div class="col-8">
+            <input type="text" class="form-control" name="num" id="num" placeholder="Ingrese numeros enteros positivos o negativos">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <div class="offset-sm-4 col-sm-8">
+            <button type="button" class="btn btn-primary" onclick="numerosEnteros()">Mostrar</button>
+          </div>
+        </div>
+      </form>
+      <div id="resultado"></div>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
@@ -58,3 +77,5 @@
 </body>
 
 </html>
+
+
