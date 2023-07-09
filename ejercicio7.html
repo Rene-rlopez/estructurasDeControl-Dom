@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="René López">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/4b6524c5de.js" crossorigin="anonymous"></script>
@@ -35,26 +36,48 @@
             </li>
         </ul>
         </header>
-    <h1>Calculadora de Nota Media Ponderada</h1>
-    <label for="nota1">Nota 1:</label>
-    <input type="number" id="nota1" step="0.01">
-    <br>
+        <main>
+            <div class="container">
+                <h1 class="alert alert-primary text-center" role="alert">Calculadora de nota media ponderada</h1>
+                <div class="mb-3 row">
+                    <label for="nota1" class="col-4 col-form-label">Nota 1:</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" id="nota1" step="0.1" min="0" max="10" placeholder="Escribe la nota recibida">
+                    </div>
+                </div>
+            
+                <div class="mb-3 row">
+                    <label for="ponderacion1" class="col-4 col-form-label">Ponderación 1 (%):</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" id="ponderacion1" step="0.1" min="10" max="100" placeholder="Escribe qué porcentaje recibirá esta primera evaluación">
+                    </div>
+                </div>
+            
+                <div class="mb-3 row">
+                    <label for="nota2" class="col-4 col-form-label">Nota 2:</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" id="nota2" step="0.1" min="0" max="10" placeholder="Escribe la nota recibida">
+                    </div>
+                </div>
+            
+                <div class="mb-3 row">
+                    <label for="ponderacion2" class="col-4 col-form-label">Ponderación 2 (%):</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" id="ponderacion2" step="0.1" min="10" max="100" placeholder="Escribe qué porcentaje recibirá esta segunda evaluación">
+                    </div>
+                </div>
+            
+                <div class="mb-3 row">
+                    <div class="offset-sm-4 col-sm-8">
+                        <button class="btn btn-primary" onclick="calcularNotaMediaPonderada()">Calcular</button>
+                    </div>
+                </div>
 
-    <label for="ponderacion1">Ponderación 1 (%):</label>
-    <input type="number" id="ponderacion1" step="0.01">
-    <br>
-
-    <label for="nota2">Nota 2:</label>
-    <input type="number" id="nota2" step="0.01">
-    <br>
-
-    <label for="ponderacion2">Ponderación 2 (%):</label>
-    <input type="number" id="ponderacion2" step="0.01">
-    <br>
-
-    <button onclick="calcularNotaMediaPonderada()">Calcular</button>
-    <br>
-    <p id="resultado"></p>
+                <div class="alert alert-secondary">
+                    <div id="resultado"></div>
+                </div>
+            </div>
+        </main>
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
