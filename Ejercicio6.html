@@ -59,17 +59,12 @@
         </div>
       </div>
       <h4 class="text-primary">Destino</h4>
-      <button class="btn btn-primary" value="Costa" onclick="calcularDescuento(this.value)">La costa del sol
-        $50</button><br><br>
-      <button class="btn btn-primary" value="Panchimalco" onclick="calcularDescuento(this.value)">Panchimalco
-        $100</button><br><br>
-      <button class="btn btn-primary" value="Puerto" onclick="calcularDescuento(this.value)">Puerto el triunfo
-        $125</button>
-        <br><br>
+      <button class="btn btn-primary" id="Costa" onclick="calcularDescuento()">La costa del sol $50</button><br><br>
+      <button class="btn btn-primary" id="Panchimalco" onclick="calcularDescuento()">Panchimalco $100</button><br><br>
+      <button class="btn btn-primary" id="Puerto" onclick="calcularDescuento()">Puerto el triunfo $125</button>
       <div class="col-4">
         <div id="resultado"></div>
       </div>
-    </div>
   </section>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
