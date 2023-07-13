@@ -1,5 +1,5 @@
 function calcularPromedios() {
-    var mananaEdades = [
+    let mananaEdades = [
         parseInt(document.getElementById("manana1").value),
         parseInt(document.getElementById("manana2").value),
         parseInt(document.getElementById("manana3").value),
@@ -7,7 +7,7 @@ function calcularPromedios() {
         parseInt(document.getElementById("manana5").value)
     ];
 
-    var tardeEdades = [
+    let tardeEdades = [
         parseInt(document.getElementById("tarde1").value),
         parseInt(document.getElementById("tarde2").value),
         parseInt(document.getElementById("tarde3").value),
@@ -16,7 +16,7 @@ function calcularPromedios() {
         parseInt(document.getElementById("tarde6").value)
     ];
 
-    var nocheEdades = [
+    let nocheEdades = [
         parseInt(document.getElementById("noche1").value),
         parseInt(document.getElementById("noche2").value),
         parseInt(document.getElementById("noche3").value),
@@ -31,9 +31,9 @@ function calcularPromedios() {
     ];
 
  
-    var promedioManana = calcularPromedio(mananaEdades);
-    var promedioTarde = calcularPromedio(tardeEdades);
-    var promedioNoche = calcularPromedio(nocheEdades);
+    let promedioManana = calcularPromedio(mananaEdades);
+    let promedioTarde = calcularPromedio(tardeEdades);
+    let promedioNoche = calcularPromedio(nocheEdades);
 
     document.getElementById("resultado").innerHTML = "Promedio del turno mañana: " + promedioManana.toFixed(2) + "<br>" +
         "Promedio del turno tarde: " + promedioTarde.toFixed(2) + "<br>" +
@@ -51,7 +51,7 @@ function calcularPromedios() {
 }
 
 function calcularPromedio(edades) {
-    var suma = 0;
+    let suma = 0;
     for (var i = 0; i < edades.length; i++) {
         suma += edades[i];
     }
