@@ -1,7 +1,7 @@
 function validarFormulario() {
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var email = document.getElementById("email").value;
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let email = document.getElementById("email").value;
 
     if (nombre === "" || apellido === "" || email === "") {
         alert("No ha completado el formulario. Por favor, llene todos los campos.");
