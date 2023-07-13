@@ -52,7 +52,7 @@ function calcularPromedios() {
 
 function calcularPromedio(edades) {
     let suma = 0;
-    for (var i = 0; i < edades.length; i++) {
+    for (let i = 0; i < edades.length; i++) {
         suma += edades[i];
     }
     return suma / edades.length;

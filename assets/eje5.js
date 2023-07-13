@@ -22,7 +22,7 @@ function infoCar() {
               <a href="#" class="btn btn-primary">Comprar</a>
           </div>
           <div class="card-footer text-muted border-secondary ">
-              2 days ago
+              
           </div>
       </div>`;
     } else if (seleccionado === "Ford Focus") {
@@ -40,7 +40,7 @@ function infoCar() {
               <a href="#" class="btn btn-primary">Comprar</a>
           </div>
           <div class="card-footer text-muted border-danger">
-              2 days ago
+              
           </div>
       </div>`;
     } else if (seleccionado === "Ford Escape") {
@@ -58,7 +58,7 @@ function infoCar() {
               <a href="#" class="btn btn-primary">Comprar</a>
           </div>
           <div class="card-footer text-muted border-primary">
-              2 days ago
+              
           </div>
       </div>`;
     } else {

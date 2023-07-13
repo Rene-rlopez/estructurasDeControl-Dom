@@ -1,20 +1,22 @@
-function calcularDescuento() {
-    var origen = document.getElementById('origen').value.toLowerCase();
-    var destino = document.getElementById('destino').value.toLowerCase();
+
+function calcularDescuento(destino) {
+    var Costa = "La costa del sol";
+    var Panchimalco = "Panchimalco";
+    var Puerto = "Puerto el triunfo";
     var descuento = 0;
-    
-    if (origen === "palma" && destino === "la costa del sol") {
+
+    if (destino === Costa) {
         descuento = 0.05;
-    } else if (destino === "panchimalco") {
+    } else if (destino === Panchimalco) {
         descuento = 0.1;
-    } else if (destino === "puerto el triunfo") {
+    } else if (destino === Puerto) {
         descuento = 0.15;
     }
 
     var resultadoElement = document.getElementById('resultado');
     if (descuento > 0) {
-        resultadoElement.innerHTML = "se aplicara un descuento del " + (descuento * 100) + "% en el viaje";
+        resultadoElement.innerHTML = "<br><div class='alert alert-success' role='alert'><strong>Se aplicará un descuento del " + (descuento * 100) + "% en el viaje</strong></div>";
     } else {
-        resultadoElement.innerHTML = "no se aplica descuento en el viaje.";
+        resultadoElement.innerHTML = "<div class='alert alert-danger' role='alert'><strong>No se aplica descuento en el viaje</strong></div>";
     }
 }
